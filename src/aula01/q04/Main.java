@@ -1,23 +1,27 @@
 package aula01.q04;
 
+import java.util.Scanner;
+
 public class Main {
     static void main() {
-        System.out.println("Questão 4!");
+        Scanner sc1 = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
+        String r;
+        System.out.println("Digite (s) se quer cadastrar um usuário: ");
+        r = sc2.next();
+        while(r.equalsIgnoreCase("S")) {
 
-        double salario = 1500.00;
-        double desconto;
-        String textoDesconto;
-        if (salario > 2500)
-            textoDesconto = "de 20%";
-        else if(salario > 1500 && salario <= 2500)
-            textoDesconto = "de 10%";
-        else if(salario > 900 && salario <= 1500)
-            textoDesconto = "de 5%";
-        else if(salario <= 900)
-            textoDesconto = "isento";
-        else
-            textoDesconto = "desconto não calculado";
+            System.out.print("Digite seu nome: ");
+            String nome = sc2.next();
 
-        System.out.printf("Seu salário de %f e o desconto é %s.\n",salario,textoDesconto);
+
+            System.out.println("Digite sua idade: ");
+            int idade = sc1.nextInt();
+
+            System.out.println("Se quiser realizar um novo cadastro, digite (s).");
+            r = sc2.next();
+        }
+        sc1.close();
+        sc2.close();
     }
 }
