@@ -4,10 +4,10 @@ public class Main {
     static void main() {
         System.out.println("Questão 1");
         int horas = 40;
-        int total;
+        double total;
 
-        total = 40 * 15;
+        total = 40 *15;
 
-        System.out.println(total);
+        System.out.println("O total recebido foi: "+total);
     }
 }

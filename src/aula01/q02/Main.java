@@ -7,11 +7,11 @@ public class Main {
         int num2 = 40;
         String texto;
         if(num1 > num2){
-            texto = "é maior";
+            texto = num1 + " é maior "+ num2;
         }else if (num1 == num2){
-            texto = "é igual";
+            texto = num1 + " é igual " + num2;
         }else {
-            texto = "é menor";
+            texto = num1+ " é menor "+num2;
         }
         System.out.println(texto);
 
