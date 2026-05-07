@@ -1,11 +1,14 @@
-package aula08.q01;
+package Aula09.q01;
+
 import java.util.Scanner;
+
 public class Main {
     static void main(String[] args) {
         Scanner sc1 = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
 
-        
+        CadastroProfessor cp = new CadastroProfessor();
+
         int opc;
         do {
             System.out.println("Escolha qual tipo de conta deseja criar; Para sair digite 0");
@@ -19,7 +22,7 @@ public class Main {
                 System.out.println("Conta Empresarial criada");
             }else if(opc == 3){
                 System.out.println("Conta corrente criada");
-            }else if(opc > 3 && opc < 0){
+            }else if(opc > 3 || opc < 0){
                 System.out.println("Opção inválida tente novamente");
             }
         }while (opc != 0);
